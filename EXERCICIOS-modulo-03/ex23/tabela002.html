@@ -8,15 +8,27 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        tbody > tr:nth-child(2n) {
+            background-color:rgb(131, 139, 146);
+            
+        }
         
         table{
             width: 500px;
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 7px;
+            background-color: rgb(156, 204, 247);
+        }
+
         thead, tfoot {
             background-color: blue;
             color: white;
+            font-size: 1.2em;
         }
         td, th {
             border: 1px solid black;
@@ -32,6 +44,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -41,10 +54,11 @@
     -->
 
     <table>
+        <caption>População dos Estados Federativos</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -163,7 +177,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td><strong>Total de Habitantes</strong></td>
+                <th scope="row">Total de Abitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
