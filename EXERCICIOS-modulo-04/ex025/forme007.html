@@ -6,6 +6,27 @@
     <title>FFORMULÁRIO</title>
 </head>
 <body>
-    
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="ies">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Regão Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
